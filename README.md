@@ -14,6 +14,14 @@ batteries, and auxiliary systems. It combines ADC acquisition, persistent
 calibration, an I2C display, FreeRTOS tasks, Wi-Fi, and an embedded diagnostics
 dashboard.
 
+### [Raspberry Pi HIL Test Rig](https://github.com/Davidgb4005/raspi-hil-test-rig)
+
+A Rust hardware-in-the-loop platform that drives a firmware target over
+Raspberry Pi GPIO, decodes checksummed UART state telemetry, compares behavior
+against a digital twin, and coordinates Nordic PPK2 current captures. It
+includes a scriptable test DSL, terminal UI, power-analysis tools, and CI-backed
+hardware-free tests.
+
 ### [Edge Health Agent](https://github.com/Davidgb4005/edge-health-agent)
 
 A dependency-light C service that reads Linux health metrics directly from
@@ -40,10 +48,10 @@ raw SocketCAN integration, CI tests, and hardened systemd packaging.
 
 ## Tools and technologies
 
-- **Firmware:** C, C++, ESP-IDF, FreeRTOS, bare-metal peripherals
+- **Firmware:** C, C++, Rust, ESP-IDF, FreeRTOS, bare-metal peripherals
 - **Embedded Linux:** Yocto Project, BitBake, systemd, SocketCAN, procfs/sysfs, QEMU
 - **Build and quality:** CMake, Git, GitHub Actions, unit testing
-- **Interfaces:** I2C, SPI, UART, ADC, GPIO, TCP/IP, HTTP
+- **Interfaces:** I2C, SPI, UART, ADC, GPIO, TCP/IP, HTTP, hardware-in-the-loop
 
 I'm currently looking for embedded firmware and Embedded Linux opportunities
 where I can contribute across the boundary between hardware and software.
