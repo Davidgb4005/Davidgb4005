@@ -26,10 +26,22 @@ A Yocto layer that packages the health agent into a read-only QEMU ARM64 image.
 It demonstrates a pinned BitBake recipe, custom image composition, systemd
 integration, reproducible kas configuration, and OEQA runtime testing.
 
+### [Static Task Scheduler](https://github.com/Davidgb4005/static-task-scheduler)
+
+A heap-free cooperative scheduler for small microcontrollers, written in
+portable C11. It uses caller-owned storage, rollover-safe deadline comparisons,
+and deterministic tests for timing edge cases.
+
+### [SocketCAN Telemetry](https://github.com/Davidgb4005/socketcan-telemetry)
+
+A C++17 Embedded Linux service that consumes vehicle CAN frames, decodes
+fixed-point signals, and emits JSON. It includes hardware-free traffic replay,
+raw SocketCAN integration, CI tests, and hardened systemd packaging.
+
 ## Tools and technologies
 
 - **Firmware:** C, C++, ESP-IDF, FreeRTOS, bare-metal peripherals
-- **Embedded Linux:** Yocto Project, BitBake, systemd, procfs/sysfs, QEMU
+- **Embedded Linux:** Yocto Project, BitBake, systemd, SocketCAN, procfs/sysfs, QEMU
 - **Build and quality:** CMake, Git, GitHub Actions, unit testing
 - **Interfaces:** I2C, SPI, UART, ADC, GPIO, TCP/IP, HTTP
 
